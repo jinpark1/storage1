@@ -55,17 +55,18 @@ var myArrayCopy = myArray.slice();
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly(element) {
-  var evensOnly = [];
-  for(i=0;i<element.length;i++){
-    if(element[i] % 2 == 0){
-      evensOnly.push(element[i]);
+function evensOnly() {
+  var evensArray = [];
+  for(i=0;i<myNumbers.length;i++){
+    if(myNumbers[i] % 2 === 0){
+      evensArray.push(myNumbers[i]);
     };
   };
-  return evensOnly;
+  console.log(evensArray);
+  return evensArray;
 }
 
-console.log(evensOnly(myNumbers));
+evensOnly();
 
 
 
@@ -94,6 +95,8 @@ let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
 var indexes = [];
 function indexFinder(){
   for(i=0;i<randomNumbers.length;i++){
-    indexes.push(randomNumbers[i]);
+    indexes.push(i);
   };
+  return indexes;
 };
+console.log(indexFinder(randomNumbers));
