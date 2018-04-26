@@ -1,0 +1,43 @@
+header{
+  text-align: center;
+  font-size: 50px;
+}
+
+.footer1{
+  text-align: center;
+  color: blue;
+}
+
+footer{
+  font-size: 20px;
+}
+
+.button1 {
+  background-color: #999;
+  height: 100px;
+  width: 100px;
+  padding: 0px;
+  color: white;
+  margin: 50px 50px;
+  animation: Button-2-spin infinite 20s linear;
+}
+
+.button2 {
+  background-color: #333;
+  height: 100px;
+  width: 100px;
+  padding: 0px;
+  color: white;
+  margin: 50px 50px;
+  animation: Button-1-spin infinite 20s linear;
+}
+
+@keyframes Button-1-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes Button-2-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
